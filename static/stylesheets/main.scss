@@ -215,3 +215,84 @@ img {
 }
 
 /* END LOGO */
+
+/* JOB COMPANY DETAIL */
+.collaborators {
+  margin: 0 20px;
+  float: left;
+  width: calc(100% - 370px);
+  position: relative;
+}
+
+.collaborator-item{
+  margin: 15px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  position: relative;
+
+}
+
+.detail h2::before, .detail h2::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.detail h2 {
+  float: left;
+  margin: 5px 20px;
+}
+
+.collaborator-item::before, .collaborator-item::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.collaborator-item ul {
+  float: left;
+  width: 100%
+}
+
+.collaborator-item li {
+  border-bottom: 1px solid #e7e4d8;
+  padding: 10px 0;
+}
+
+.collaborator-item li:last-child {
+  border: none;
+}
+
+.collaborator-item span {
+  font-weight: bold;
+  display: inline-block;
+  width: 80px;
+}
+
+
+.read-more {
+  margim-top: 100px;
+  position: absolute;
+  right: 285px;
+  top: 145px;
+}
+
+.top-match {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  content: url('/static/images/favourites.svg');
+}
+
+.schedule{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  content: url('/static/images/calendar.svg');
+}
+
+/* JOB COMPANY DETAIL END*/
