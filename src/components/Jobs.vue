@@ -1,5 +1,11 @@
 <template>
   <div class="container main">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button class="btn btn-outline-primary">Search</button>
+      </div>
+      <input type="text" class="form-control" aria-label="...">
+    </div>
     <ul>
       <li class="job-item">
         <img class="job-img" src="../assets/work.jpg" alt="" >
