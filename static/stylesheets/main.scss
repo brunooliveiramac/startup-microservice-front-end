@@ -135,6 +135,7 @@ img {
   padding: 60px 0px;
   margin: 0 auto;
   max-width: 960px;
+  position: relative;
 }
 
 .main::after, .main::before {
@@ -232,15 +233,9 @@ img {
 
 }
 
-.detail h2::before, .detail h2::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.detail h2 {
-  float: left;
+.main h2 {
   margin: 5px 20px;
+  float: left;
 }
 
 .collaborator-item::before, .collaborator-item::after {
@@ -269,7 +264,6 @@ img {
   width: 80px;
 }
 
-
 .read-more {
   margim-top: 100px;
   position: absolute;
@@ -286,7 +280,7 @@ img {
   content: url('/static/images/favourites.svg');
 }
 
-.schedule{
+.schedule {
   width: 28px;
   height: 28px;
   position: absolute;
@@ -296,3 +290,25 @@ img {
 }
 
 /* JOB COMPANY DETAIL END*/
+
+/* JOB DETAIL */
+
+.description-container {
+  position: relative;
+  float: left;
+  display: block;
+  width: calc(100% - 370px);
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.description-container div{
+  margin: 20px 0px;
+}
+
+button {
+  float: right;
+
+}
+
+/* JOB DETAIL END */

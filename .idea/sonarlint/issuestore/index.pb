@@ -31,5 +31,11 @@ L
 static/stylesheets/main.scss,e/9/e9529e21c888d0ebed9b44aa4f92448579fa7461
 G
 src/components/Jobs.vue,d/3/d3d7dfbdeb4b53ed51db16cfd8a08f18540056cb
-Q
-!src/components/JobDescription.vue,3/d/3dd2515e29cc23bbd2a00570b251e29f50e34e51
+N
+src/components/shared/Card.vue,9/8/989ab59797d4641e5e8bb496498ad53c0d08efb5
+L
+src/components/JobDetail.vue,5/d/5d0e0ad1f41031d704766f56fc106652c7a2f49d
+J
+static/images/calendar.svg,6/d/6d5160b99e0e53833cd0db3e128d9e7cdd219667
+S
+#src/components/JobCompanyDetail.vue,5/f/5f5ff5f182de437dff0823130dd8f00061a74d0e
