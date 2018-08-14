@@ -20,7 +20,7 @@
             <div>
                 De segunda a sexta, das 07:00 às 17:00.
             </div>
-            <button class="btn btn-outline-primary btn-lg">
+            <button class="btn btn-outline-primary btn-lg btn-job">
                 Enroll
             </button>
         </div>

@@ -97,8 +97,6 @@ img {
   }
 }
 
-
-
 .form-sign-in .checkbox {
   font-weight: 400;
 }
@@ -208,7 +206,6 @@ img {
 
 .logo h2::before {
   display: block;
-  //content: url('/static/images/logo.png');
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -251,7 +248,7 @@ img {
 
 .collaborator-item li {
   border-bottom: 1px solid #e7e4d8;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .collaborator-item li:last-child {
@@ -268,7 +265,7 @@ img {
   margim-top: 100px;
   position: absolute;
   right: 285px;
-  top: 145px;
+  top: 120px;
 }
 
 .top-match {
@@ -306,9 +303,13 @@ img {
   margin: 20px 0px;
 }
 
-button {
-  float: right;
+.enroll {
+  max-width: 50%;
+  margin-top: 100px;
+}
 
+.btn-job {
+  float: right;
 }
 
 /* JOB DETAIL END */
