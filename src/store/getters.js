@@ -1,5 +1,5 @@
 export default {
-  getJobs(state) {
+  getJobList(state) {
     return state.jobs;
   }
 }

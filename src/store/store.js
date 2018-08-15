@@ -9,20 +9,7 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    jobs: [
-      {
-        "name": "Job Fera",
-        "company": "Itau"
-      },
-      {
-        "name": "Job Fera",
-        "company": "Itau"
-      }
-    ],
-    columns: [
-      {"name": "Nome"},
-      {"name": "Empresa"}
-    ],
+    jobs: [],
     job: {}
   },
   getters: getters,

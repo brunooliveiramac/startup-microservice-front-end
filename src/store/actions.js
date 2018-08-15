@@ -7,16 +7,14 @@ export default {
     //COMMIT WHEN PROMISSE FINISHES
     commit('save', payload);
   },
-  getJobs: function ({ commit, state }) {
+  getJobService: function ({ commit, dispatch, state }) {
+    console.log('calling')
     return jobService.getJobs().then((response) => {
       let jobs = response.data
-      return jobs
+      console.log('Call', jobs)
+      commit('jobs', jobs)
     }).catch(() => {
       console.log('Error')
     })
   }
-
-
-
-
 }

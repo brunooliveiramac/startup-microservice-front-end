@@ -3,5 +3,5 @@ var prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"local"',
-  API_URL: '"http://http://jsonplaceholder.typicode.com"'
+  API_URL: '"http://jsonplaceholder.typicode.com"'
 })
