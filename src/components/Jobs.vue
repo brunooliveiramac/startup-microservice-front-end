@@ -8,11 +8,14 @@
         </div>
         <ul>
             <li v-for="job in getJobList" class="job-item">
-                <img class="job-img" src="../assets/work.jpg" alt="">
-                <div class="job-company">{{job.company}}</div>
-                <div class="job-location">{{job.local}}</div>
-                <div class="job-role">{{job.name}}</div>
-                <div class="job-quantity"><b>{{job.quantity}} </b>open position</div>
+                <router-link :to="{name : 'detail', params : { id : job.jobId }}">
+                    <img class="job-img" src="../assets/work.jpg" alt="">
+                    <div class="job-company">{{job.company}}</div>
+                    <div class="job-location">{{job.local}}</div>
+                    <div class="job-role">{{job.name}}</div>
+                    <div class="job-quantity"><b>{{job.quantity}} </b>open position</div>
+                </router-link>
+
             </li>
         </ul>
         <infinite-loading :on-infinite="onInfinite" ref="infiniteLoading">
@@ -28,11 +31,13 @@
 <script>
     import {mapActions, mapGetters} from 'vuex';
     import InfiniteLoading from 'vue-infinite-loading'
+    import Spinner from '../components/shared/Spinner'
 
 
     export default {
         components: {
-            'infinite-loading': InfiniteLoading
+            'infinite-loading': InfiniteLoading,
+            'spinner': Spinner
         },
         computed: {
             ...mapGetters({
@@ -43,7 +48,7 @@
             ...mapActions([
                 'getJobService'
             ]),
-            onInfinite () {
+            onInfinite() {
                 this.getJobService()
             }
         }

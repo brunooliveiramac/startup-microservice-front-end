@@ -55,6 +55,7 @@ img {
   font-weight: bold;
   margin: 0 10px;
   color: white;
+  position: relative;
 }
 
 .menu-nav ul {
@@ -73,6 +74,21 @@ img {
 
 /* LOGIN */
 
+svg {
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 130px;
+  position: absolute;
+}
+
+path {
+  fill: aliceblue;
+  stroke: lightskyblue;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
 @media screen and (max-width: 739px) {
   .login {
     max-width: 100%;
@@ -90,7 +106,8 @@ img {
   .login {
     max-width: 60%;
     margin: 60px auto;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #ddd;
     align-items: center;
     padding: 40px;
   }
@@ -128,6 +145,10 @@ img {
 
 /* JOBS */
 
+a {
+  text-decoration: none;
+}
+
 .main {
   padding: 60px 0px;
   margin: 0 auto;
@@ -142,7 +163,10 @@ img {
 }
 
 .job-item {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #ddd;
   transition: 0.3s;
   cursor: pointer;
   max-width: 300px;
@@ -151,7 +175,7 @@ img {
   min-height: 335px;
   float: left;
   margin: 10px;
-  padding: 5px;
+  padding: 2px;
 }
 
 .job-item:hover {
@@ -159,12 +183,17 @@ img {
 }
 
 .job-img {
-  min-width: 290px;
-  min-height: 217px;
+  margin: 1px;
+  position: relative;
+  min-width: 293px;
+  min-height: 200px;
+  max-height: 200px;
   background-size: cover;
+  padding: 2px;
 }
 
 .job-company {
+  position: relative;
   text-align: center;
   font-weight: bold;
   font-size: 17px;
@@ -191,11 +220,12 @@ img {
 
 
 .login-head {
-  margin: 30px auto;
+  margin: 150px auto;
   max-width: 960px;
 }
 
 .logo {
+  position: relative;
   text-align: center;
 }
 
@@ -223,7 +253,9 @@ img {
 
 .collaborator-item{
   margin: 15px 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px 0px rgba(153, 153, 153, 0.5);
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid #ddd;
   padding: 10px;
   position: relative;
 
@@ -330,6 +362,7 @@ img {
 
 .form-control {
   box-shadow: none !important;
+  border-radius: 0;
 }
 
 /* JOB DETAIL END */

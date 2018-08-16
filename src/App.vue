@@ -1,23 +1,21 @@
 <template>
-    <!DOCTYPE html>
-    <html>
-        <div class="app">
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-                <meta name="description" content="">
-                <meta name="author" content="">
-                <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">            </head>
-            <body>
-            <header class="menu-bg">
-                <main-menu v-if="!$route.meta.hideMenu"></main-menu>
-            </header>
-            <div class="container">
-                <router-view></router-view>
-            </div>
-            </body>
+    <div class="app">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="description" content="">
+            <meta name="author" content="">
+            <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
+        </head>
+        <body>
+        <header class="menu-bg">
+            <main-menu v-if="!$route.meta.hideMenu"></main-menu>
+        </header>
+        <div class="container">
+            <router-view></router-view>
         </div>
-    </html>
+        </body>
+    </div>
 </template>
 
 <script>

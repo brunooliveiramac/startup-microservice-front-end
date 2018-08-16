@@ -24,6 +24,7 @@
                     <li><span>Phone</span><label class="collaborator-phone">14 996644567</label></li>
                     <li><span>Age</span><label class="collaborator-age">20</label></li>
                 </ul>
+                <!--<a class="schedule" href="" data-toggle="tooltip" data-placement="top" title="Schedule Interview"></a>-->
                 <a class="read-more" href="">read more</a>
             </li>
             <li class="collaborator-item">
