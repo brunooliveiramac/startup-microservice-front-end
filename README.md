@@ -1,4 +1,4 @@
-# venturus
+# 
 
 > A Vue.js project
 
